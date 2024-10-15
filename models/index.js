@@ -1,10 +1,10 @@
 const dbConfig = require("../config/db.config")
-const dbcCnfig=require("../config/db.config")
+
 
 const Sequelize=require("sequelize")
 
  //making object of Sequelize (to open connection)
-const sequelize=new Sequelize(dbcCnfig.db,dbConfig.USER,dbConfig.PASSWORD,
+const sequelize=new Sequelize(dbConfig.DB,dbConfig.USER,dbConfig.PASSWORD,
     {
         host:dbConfig.HOST,
         dialect:dbConfig.dialect,

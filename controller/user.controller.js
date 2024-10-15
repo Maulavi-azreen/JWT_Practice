@@ -4,7 +4,7 @@ const authConfig=require("../config/auth.config")
 const User=db.user;
 
 exports.signup=(req,res)=>{
-    const [username,email,password]=req.body
+    const [username,password,email]=req.body
     if(!username || !password || !email){
         res.status(400).send({message:"Request body is invalid"})
     }
